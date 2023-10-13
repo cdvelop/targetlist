@@ -3,7 +3,7 @@ package targetlist
 // BuildHtmlTargetItem item a seleccionar
 func (t TargetList) BuildTag() string {
 
-	out := `<li data-id="` + t.FieldID + `" class="target-li-off target-li ">` //abrimos listado
+	out := `<li data-id="` + t.FieldID + `" class="target-li-off target-li">` //abrimos listado
 
 	//agregamos icono
 	if t.LeftMiddleText != "" {
@@ -21,4 +21,23 @@ func (t TargetList) BuildTag() string {
 	out += `</li>`
 
 	return out
+}
+
+func (t TargetList) HtmlContainer() string {
+
+	return `<div class="container-list-search" data-id="` + t.Object.Name + `" onclick="TargetListSelected(event)">
+
+	<li data-id="1672322764831794600" class="target-li-off target-li"><a href="#" name="title">eco abdominal</a><span class="description-target">dra. sonia sandoval</span></li>
+
+	</div>
+
+	<div id="device-search-form" class="search-container">
+		<label for="filter-object">
+			<svg aria-hidden="true" focusable="false" class="form-btn">
+				<use xlink:href="#icon-search" />
+			</svg>
+		</label>
+		<input type="search" id="filter-object" title="letras números - permitidos max 50 caracteres"
+			pattern="^[A-Za-zÑñ 0-9-]{1,20}$">
+	</div>`
 }

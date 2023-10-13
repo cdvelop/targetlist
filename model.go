@@ -16,3 +16,6 @@ type TargetList struct {
 
 	FooterDescription string
 }
+
+type typeDate struct {
+}
