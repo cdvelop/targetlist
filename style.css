@@ -1,0 +1,42 @@
+.description-target {
+    margin-bottom: -55px;
+    right: 5px;
+    position: absolute;
+    background: var(--col-gra);
+    color: var(--col-cua);
+    font-size: 80%;
+    text-transform: capitalize;
+    border-radius: .4em;
+    padding: .3em;
+}
+
+.left-description {
+    border-right: 2px solid var(--col-gra);
+    display: inline-flex;
+    margin-right: .6em;
+    height: 100%;
+    width: 3em;
+    min-width: 3em;
+    color: var(--col-cua);
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    padding-right: .3em;
+}
+
+.left-description::before {
+    content: attr(data-up);
+    position: absolute;
+    color: var(--col-cua);
+    font-size: 60%;
+    left: 0;
+    top: 0%;
+}
+
+.left-description::after {
+    content: attr(data-down);
+    position: absolute;
+    color: var(--col-cua);
+    font-size: 65%;
+    bottom: 1%;
+}
