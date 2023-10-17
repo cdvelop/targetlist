@@ -26,7 +26,7 @@ func (t TargetList) BuildTag() string {
 func (t TargetList) HtmlContainer() string {
 
 	return `<div class="container-list-search">
-	<ol class="lista" data-id="` + t.Object.Name + `" onclick="TargetListSelected(event)">
+	<ol class="target-list-container" data-id="` + t.Object.Name + `" onclick="TargetListSelected(event)">
 	</ol>
 	</div>
 	<div id="device-search-form" class="search-container">
