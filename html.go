@@ -1,7 +1,7 @@
 package targetlist
 
 // BuildHtmlTargetItem item a seleccionar
-func (t TargetList) BuildTag() string {
+func (t TargetList) BuildItemView(all_data ...map[string]string) string {
 
 	out := `<li data-id="` + t.FieldID + `" class="target-li-off target-li">` //abrimos listado
 
@@ -23,7 +23,7 @@ func (t TargetList) BuildTag() string {
 	return out
 }
 
-func (t TargetList) HtmlContainer() string {
+func (t TargetList) BuildContainerView(id, field_name string, allow_skip_completed bool) string {
 
 	return `<div class="container-list-search">
 	<ol class="target-list-container" data-id="` + t.Object.Name + `" onclick="TargetListSelected(event)">

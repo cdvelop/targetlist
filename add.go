@@ -4,6 +4,6 @@ package targetlist
 // 	return t.Object
 // }
 
-func (TargetList) ViewComponentName() string {
+func (TargetList) ViewHandlerName() string {
 	return "TargetList"
 }
