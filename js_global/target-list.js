@@ -1,8 +1,15 @@
 
 function targetListHandler(e) {
 	e.stopPropagation();
-	targetHandler(e.target, targetListSelected, deleteListSelected)
+	const tagname = e.target.tagName.toLowerCase()
+	// console.log("tagname:", tagname);
+	if (tagname === "li") {
+		targetHandler(e.target, targetListSelected, deleteListSelected)
+	}
 }
+
+
+
 
 
 function targetListSelected(target) {
