@@ -3,7 +3,7 @@ package targetlist
 func (t targetList) BuildContainerView(id, field_name string, allow_skip_completed bool) string {
 
 	return `<div class="container-list-search">
-	<ol class="target-list-container" data-id="` + t.object_name + `" onmousedown="targetListHandler(event)" ontouchstart="targetListHandler(event)">
+	<ol class="target-list-container" data-id="` + t.ObjectName + `" onmousedown="targetListHandler(event)" ontouchstart="targetListHandler(event)">
 	</ol>
 	</div>
 	<div id="device-search-form" class="search-container">

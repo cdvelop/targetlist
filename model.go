@@ -3,8 +3,7 @@ package targetlist
 import "github.com/cdvelop/model"
 
 type targetList struct {
-	model.Logger
-	object_name string
+	*model.Object
 	*Item
 }
 

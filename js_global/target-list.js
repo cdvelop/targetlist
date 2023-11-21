@@ -9,9 +9,6 @@ function targetListHandler(e) {
 }
 
 
-
-
-
 function targetListSelected(target) {
 	// console.log("targetListSelected:", target);
 	userViewComponentClicked(target.parentNode.dataset.id, target.dataset.id);
@@ -22,11 +19,11 @@ function deleteListSelected(target) {
 	console.log('BORRAR ELEMENTO:', target);
 
 	const obj_name = target.parentNode.dataset.id;
-    console.log('obj_name ', obj_name);
+	console.log('obj_name ', obj_name);
 
 	console.log('ID', target.dataset.id);
 
-	deleteObject(obj_name,target.dataset.id)
+	deleteObject(obj_name, target.dataset.id)
 }
 
 // selección actual, anterior
@@ -58,4 +55,28 @@ function targetListClicking(module, id) {
 	// 	li.click();
 	// }
 	targetListSelected(target)
+};
+
+
+function resetTargetList(p) {
+	const list = document.querySelector(p.query)
+	const onoff = p.enable;
+
+	// console.log("SAVE MODE: ", lista);
+	let remove = "disable";
+	let add = "target-li-off";
+
+	if (!onoff) {
+		remove = "target-li-off", add = "disable";
+	};
+	// lista disable
+	let li = list.querySelectorAll('li');
+	for (let i = 0; i < li.length; ++i) {
+		// console.log("SAVE MODE: ",MAIN_SAVE_FUNCTION);
+		if (!onoff) {
+			li[i].classList.remove("target-li-on");
+		}
+		li[i].classList.remove(remove);
+		li[i].classList.add(add);
+	}
 };
