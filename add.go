@@ -1,9 +1,17 @@
 package targetlist
 
-// func (t TargetList) ObjectVIEW() *model.Object {
-// 	return t.Object
-// }
+import "github.com/cdvelop/model"
 
-func (TargetList) ViewHandlerName() string {
-	return "TargetList"
+func Add(o *model.Object, ic *Item) {
+
+	o.FrontHandler.ViewAdapter = &targetList{
+		Logger:      o.Logger,
+		object_name: o.ObjectName,
+		Item:        ic,
+	}
+
+}
+
+func (targetList) NameViewAdapter() string {
+	return "targetList"
 }

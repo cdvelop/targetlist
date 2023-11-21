@@ -46,7 +46,7 @@ function OnOffSelList(t) {
 };
 
 
-function TargetListClicking(module, id) {
+function targetListClicking(module, id) {
 	const container = module.querySelector(`ol.target-list-container`);
 
 	const target = container.querySelector(`li[data-id="` + id + `"]`);
