@@ -43,14 +43,14 @@ function OnOffSelList(t) {
 };
 
 
-function targetListClicking(module, id) {
+function targetListObjectClicking(module, id) {
 	const container = module.querySelector(`ol.target-list-container`);
 
 	const target = container.querySelector(`li[data-id="` + id + `"]`);
 	if (target == null) {
 		return "error objeto id:" + id + " no encontrado para hacer click"
 	}
-	// console.log("TargetListClicking:", target)
+	// console.log("TargetListObjectClicking:", target)
 	// if (li) {
 	// 	li.click();
 	// }
