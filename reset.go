@@ -1,16 +1,17 @@
 package targetlist
 
-func (l targetList) ResetAdapterView() {
+func (l targetList) ResetAdapterView() (err string) {
 
 	l.Log("** ResetAdapterView targetList")
 
-	l.CallJsFunctionObject("resetTargetList", true)
+	err = l.CallJsFunctionObject("resetTargetList", true)
 
 	// err := l.CallFunction("resetargetListx")
 	// if err != nil {
 	// 	return err
 	// }
 
+	return
 }
 
 // func (l targetList) callJsFunc(func_name string, enable bool) {
