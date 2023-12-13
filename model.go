@@ -5,6 +5,7 @@ import "github.com/cdvelop/model"
 type targetList struct {
 	*model.Object
 	*Item
+	reset model.CallJsFunWithParameters
 }
 
 type Item struct {
