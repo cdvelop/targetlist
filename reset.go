@@ -1,6 +1,6 @@
 package targetlist
 
 func (l targetList) ResetViewHandlerObject() (err string) {
-
-	return l.reset.ExecuteJsFun(l.Object)
+	_, err = l.reset.CallWithEnableAndQueryParams(l.Object)
+	return
 }

@@ -80,3 +80,14 @@ function resetTargetList(p) {
 		li[i].classList.add(add);
 	}
 };
+
+
+function targetListObjectCount(opt) {
+	
+	console.log(opt)
+
+
+
+
+	return 3
+}
