@@ -83,11 +83,11 @@ function resetTargetList(p) {
 
 
 function targetListObjectCount(opt) {
-	
-	console.log(opt)
+	let list = document.querySelector(opt.query)
 
+	// Obtener la lista de elementos li dentro del ol
+	var elements = list.getElementsByTagName('li');
 
-
-
-	return 3
+	// Contar el número de elementos li
+	return elements.length
 }
