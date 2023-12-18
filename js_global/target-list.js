@@ -11,7 +11,7 @@ function targetListHandler(e) {
 
 function targetListSelected(target) {
 	// console.log("targetListSelected:", target);
-	userViewComponentClicked(target.parentNode.dataset.id, target.dataset.id);
+	objectClickedUI(target.parentNode.dataset.id, target.dataset.id);
 	OnOffSelList(target)
 }
 
