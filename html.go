@@ -1,13 +1,16 @@
 package targetlist
 
-import "github.com/cdvelop/platform"
+import (
+	"github.com/cdvelop/model"
+	"github.com/cdvelop/platform"
+)
 
 func (t targetList) BuildContainerView(id, field_name string, allow_skip_completed bool) string {
 
 	return `<div class="container-list-search">
 	<ol class="target-list-container" data-id="` + t.ObjectName + `" onmousedown="targetListHandler(event)" ontouchstart="targetListHandler(event)">
 	</ol>
-	</div><div class="search-container">` + platform.BuildHtmlFormButton(platform.ButtonForm{
+	</div><div class="search-container">` + platform.BuildHtmlFormButton(&model.ButtonForm{
 		ModuleName: t.Module.ModuleName,
 		ButtonName: "btn_cancel",
 		Title:      "Comenzar Nuevamente",
