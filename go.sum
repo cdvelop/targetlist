@@ -1,4 +1,4 @@
 github.com/cdvelop/model v0.0.115 h1:YuQYowFCEdSbLLIeB3uLZ7Lex6YAzGX7LRjeVgBLFac=
 github.com/cdvelop/model v0.0.115/go.mod h1:cYJNxbv1WV/aDgiVPV9VXs8LrbF8+0nU+X+KfSevyzw=
-github.com/cdvelop/platform v0.0.76 h1:ihUtoqB5hdAqVd0D1+kzbW484zr5GcHXWt9/EnJq1NY=
-github.com/cdvelop/platform v0.0.76/go.mod h1:1YbT+HQ2MdBGnoAXpbxZ56Pr2+CBZnBxrsZRsBZgCDg=
+github.com/cdvelop/platform v0.0.77 h1:xZ1REjlUp1qaHpm8Ev9fN4xEOvBRj6BqozXZ6TTwL0o=
+github.com/cdvelop/platform v0.0.77/go.mod h1:1YbT+HQ2MdBGnoAXpbxZ56Pr2+CBZnBxrsZRsBZgCDg=
