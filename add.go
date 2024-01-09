@@ -4,7 +4,7 @@ import "github.com/cdvelop/model"
 
 func Add(o *model.Object, ic *Item) {
 
-	o.FrontHandler.ObjectViewHandler = &targetList{
+	o.FrontHandler.ViewHandlerObject = &targetList{
 		Object: o,
 		Item:   ic,
 		reset: model.CallJsOptions{
@@ -16,6 +16,6 @@ func Add(o *model.Object, ic *Item) {
 
 }
 
-func (targetList) NameViewAdapter() string {
-	return "targetList"
+func (targetList) ViewHandlerName() string {
+	return "TargetList"
 }

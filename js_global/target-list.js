@@ -15,16 +15,8 @@ function targetListSelected(target) {
 	OnOffSelList(target)
 }
 
-function deleteListSelected(target) {
-	console.log('BORRAR ELEMENTO:', target);
 
-	const obj_name = target.parentNode.dataset.id;
-	console.log('obj_name ', obj_name);
 
-	console.log('ID', target.dataset.id);
-
-	deleteObject(obj_name, target.dataset.id)
-}
 
 // selección actual, anterior
 let targetOLD;
@@ -43,7 +35,7 @@ function OnOffSelList(t) {
 };
 
 
-function targetListObjectClicking(module, id) {
+function TargetListObjectClicking(module, id) {
 	const container = module.querySelector(`ol.target-list-container`);
 
 	const target = container.querySelector(`li[data-id="` + id + `"]`);
