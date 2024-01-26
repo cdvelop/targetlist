@@ -4,7 +4,10 @@ function targetListHandler(e) {
 	const tagname = e.target.tagName.toLowerCase()
 	// console.log("tagname:", tagname);
 	if (tagname === "li") {
-		targetHandler(e.target, targetListSelected, deleteListSelected)
+		// targetHandler(e.target, targetListSelected, deleteListSelected)
+
+		targetListSelected(e.target)
+
 	}
 }
 

@@ -10,7 +10,9 @@ function deleteListSelected(target) {
 
     let ids = [target.dataset.id]
 
-    deleteObject(obj_name, ids)
+    // deleteObject(obj_name, ids)
+    console.log("BORRADO DE TARGET LIST BLOQUEADO POR ERRORES",obj_name,ids)
+    UserMessage("BORRADO ",obj_name," TARGET LIST BLOQUEADO POR ERRORES")
 }
 
 
